@@ -9,12 +9,14 @@ public class DBConnectionPool {
     private int size;
     private String user = "user";
     private String password = "251251";
-    private String url = "jdbc:mysql://localhost:3306/test_database?serverTimezone=UTC";
+    private String url = "jdbc:mysql://localhost:3306/test_database?serverTimezone=UTC&useSSL=true";
     private ArrayList<Connection> connections;
+    private ArrayList<Connection> usedConnections;
 
     protected DBConnectionPool(int size) {
         this.size = size;
         connections = new ArrayList<>(size);
+        usedConnections = new ArrayList<>(size);
         openConnections();
     }
 
@@ -25,7 +27,7 @@ public class DBConnectionPool {
             e.printStackTrace();
         }
         Connection connection = null;
-        for (int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++) {
             try {
                 connection = DriverManager.getConnection(url, user, password);
                 connections.add(connection);
@@ -36,20 +38,14 @@ public class DBConnectionPool {
         }
     }
 
-    public Connection get() {
+    protected Connection get() throws Exception {
+        if (connections.isEmpty()) throw new Exception("Отстутствуют свободные подключения");
         Connection connection = connections.get(0);
         connections.remove(0);
         return connection;
     }
 
-    public void put(Connection connection) {
-        if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
+    protected void put(Connection connection) {
+        connections.add(connection);
     }
 }
