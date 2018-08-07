@@ -62,14 +62,6 @@ public class CustomCache {
         return null;
     }
 
-    private static void removeLastFromCache(LinkedHashSet cache) {
-        Iterator iterator = cache.iterator();
-        while (iterator.hasNext()) {
-            iterator.next();
-        }
-        iterator.remove();
-    }
-
     private static void removeFirstFromCache(LinkedHashSet cache) {
         Iterator iterator = cache.iterator();
         if (iterator.hasNext()) iterator.next();
