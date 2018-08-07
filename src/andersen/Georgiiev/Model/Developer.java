@@ -6,9 +6,9 @@ package andersen.Georgiiev.Model;
 
 import andersen.Georgiiev.Database.DatabaseHandler;
 
+
 public class Developer extends Person {
     private static int totalAmount;
-    private int id;
 
     static {
         totalAmount = DatabaseHandler.countDevelopers();
@@ -16,15 +16,13 @@ public class Developer extends Person {
 
     private int salary;
     public Developer (String name, String surname, int salary) {
-        super(name, surname);
+        super(++totalAmount, name, surname);
         this.salary = salary;
-        id = ++ totalAmount;
     }
 
     public Developer (int id, String name, String surname, int salary) {
-        super(name, surname);
+        super(id, name, surname);
         this.salary = salary;
-        this.id = id;
     }
 
     public int getSalary() {
@@ -35,7 +33,4 @@ public class Developer extends Person {
         this.salary = salary;
     }
 
-    public int getId() {
-        return id;
-    }
 }

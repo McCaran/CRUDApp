@@ -1,5 +1,6 @@
 package andersen.Georgiiev;
 
+import andersen.Georgiiev.Cache.CustomCache;
 import andersen.Georgiiev.Database.DatabaseHandler;
 import andersen.Georgiiev.Model.Developer;
 import andersen.Georgiiev.Model.User;
@@ -9,6 +10,8 @@ public class Main {
     public static void main(String[] args) {
         testUsersTable();
         testDevelopersTable();
+        System.out.println(CustomCache.get(1, Developer.class));
+        CustomCache.print();
     }
 
     public static void testUsersTable() {
@@ -17,7 +20,6 @@ public class Main {
         User user3 = new User("Stanislav", "Donskoy", 7);
         DatabaseHandler.insertUser(user1);
         DatabaseHandler.insertUser(user2);
-        User user = DatabaseHandler.getUser(2);
         DatabaseHandler.insertUser(user3);
         DatabaseHandler.deleteUser(3);
     }

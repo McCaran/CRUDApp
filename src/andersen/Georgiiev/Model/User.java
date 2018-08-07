@@ -2,13 +2,14 @@ package andersen.Georgiiev.Model;
 
 import andersen.Georgiiev.Database.DatabaseHandler;
 
+import java.util.Objects;
+
 /**
  * Класс, реализующий сущность пользователя
  */
 
 public class User extends Person {
     private static int totalAmount;
-    private int id;
     private int experience;
 
     static {
@@ -16,15 +17,13 @@ public class User extends Person {
     }
 
     public User(String name, String surname, int experience) {
-        super(name, surname);
+        super(++totalAmount, name, surname);
         this.experience = experience;
-        id = ++totalAmount;
     }
 
     public User(int id, String name, String surname, int experience) {
-        super(name, surname);
+        super(id, name, surname);
         this.experience = experience;
-        this.id = id;
     }
 
     public int getExperience() {
@@ -34,9 +33,4 @@ public class User extends Person {
     public void setExperience(int experience) {
         this.experience = experience;
     }
-
-    public int getId() {
-        return id;
-    }
-
 }

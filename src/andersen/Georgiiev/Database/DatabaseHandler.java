@@ -1,5 +1,6 @@
 package andersen.Georgiiev.Database;
 
+import andersen.Georgiiev.Cache.CustomCache;
 import andersen.Georgiiev.Model.Developer;
 import andersen.Georgiiev.Model.User;
 
@@ -54,6 +55,7 @@ public class DatabaseHandler {
     }
 
     public static boolean insertUser(User user) {
+        CustomCache.put(user);
         Connection connection = pool.get();
         if (connection == null) return false;
         try (PreparedStatement pstmt = connection.prepareStatement("insert " +
@@ -87,6 +89,8 @@ public class DatabaseHandler {
     }
 
     public static User getUser(int id) {
+        User user = (User) CustomCache.get(id, User.class);
+        if (user != null) return user;
         Connection connection = pool.get();
         if (connection == null) return null;
         try (PreparedStatement pstmt = connection.prepareStatement("select " +
@@ -94,8 +98,9 @@ public class DatabaseHandler {
             pstmt.setInt(1, id);
             ResultSet rs = pstmt.executeQuery();
             while (rs.first()) {
-                return new User(rs.getInt(1), rs.getString(2),
+                user = new User(rs.getInt(1), rs.getString(2),
                         rs.getString(3), rs.getInt(4));
+                return user;
             }
         } catch (SQLException e) {
             return null;
@@ -120,6 +125,7 @@ public class DatabaseHandler {
     }
 
     public static boolean insertDeveloper(Developer developer) {
+        CustomCache.put(developer);
         Connection connection = pool.get();
         if (connection == null) return false;
         try (PreparedStatement pstmt = connection.prepareStatement("insert " +
@@ -153,6 +159,8 @@ public class DatabaseHandler {
     }
 
     public static Developer getDeveloper(int id) {
+        Developer developer = (Developer)CustomCache.get(id, Developer.class);
+        if (developer != null) return developer;
         Connection connection = pool.get();
         if (connection == null) return null;
         try (PreparedStatement pstmt = connection.prepareStatement("select " +
@@ -160,8 +168,9 @@ public class DatabaseHandler {
             pstmt.setInt(1, id);
             ResultSet rs = pstmt.executeQuery();
             while (rs.first()) {
-                return new Developer(rs.getInt(1), rs.getString(2),
+                developer = new Developer(rs.getInt(1), rs.getString(2),
                         rs.getString(3), rs.getInt(4));
+                return developer;
             }
         } catch (SQLException e) {
             return null;
