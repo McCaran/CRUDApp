@@ -11,6 +11,7 @@ public class Main {
         testUsersTable();
         testDevelopersTable();
         System.out.println(CustomCache.get(1, Developer.class));
+        System.out.println(CustomCache.get(3, Developer.class));
         CustomCache.print();
     }
 

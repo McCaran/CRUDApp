@@ -56,6 +56,7 @@ public class CustomCache {
                    removeFirstFromCache(lowerCache);
                 }
                 lowerCache.add(new SoftReference<>(person));
+                removeFromHigherCache(person);
                 return person;
             }
         }
@@ -66,6 +67,15 @@ public class CustomCache {
         Iterator iterator = cache.iterator();
         if (iterator.hasNext()) iterator.next();
         iterator.remove();
+    }
+
+    private static void removeFromHigherCache(Person person) {
+        for (WeakReference reference: higherCache) {
+            if (reference.get().equals(person)) {
+                higherCache.remove(reference);
+                return;
+            }
+        }
     }
 
     public static void print() {
