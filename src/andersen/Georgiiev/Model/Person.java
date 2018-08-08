@@ -1,7 +1,5 @@
 package andersen.Georgiiev.Model;
 
-import java.util.Objects;
-
 /**
  * Абстрактный класс, определяющий общие черты для наследников
  */

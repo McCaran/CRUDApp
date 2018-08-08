@@ -2,8 +2,6 @@ package andersen.Georgiiev.Model;
 
 import andersen.Georgiiev.Database.DatabaseHandler;
 
-import java.util.Objects;
-
 /**
  * Класс, реализующий сущность пользователя
  */
