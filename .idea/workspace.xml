@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54919836-b0cc-4145-909f-34c7ea395145" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Cache/CustomCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Database/DBConnectionPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Database/DatabaseHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Database/mysql-connector-java-8.0.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Model/Developer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Model/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andersen/Georgiiev/Model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12__2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12__3_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRUDApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CRUDApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRUDApp/andersen/Georgiiev/Cache/CustomCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRUDApp/andersen/Georgiiev/Database/DBConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRUDApp/andersen/Georgiiev/Database/DatabaseHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRUDApp/andersen/Georgiiev/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRUDApp/andersen/Georgiiev/Model/Developer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRUDApp/andersen/Georgiiev/Model/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRUDApp/andersen/Georgiiev/Model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,36 +43,40 @@
     <session id="-808055955">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7610" />
+          <entry key="java" value="7677" />
+          <entry key="xml" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7606" />
+          <entry key="JAVA" value="7673" />
           <entry key="SQL" value="4" />
+          <entry key="XML" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="35" />
+          <entry key="java" value="37" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="37" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -75,16 +86,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/andersen/Georgiiev/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#testUsersTable#0;class#Main#0" />
                 <element signature="method#testDevelopersTable#0;class#Main#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andersen/Georgiiev/Database/DBConnectionPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/andersen/Georgiiev/TestApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -116,8 +154,10 @@
         <option value="$PROJECT_DIR$/src/andersen/Georgiiev/Main.java" />
         <option value="$PROJECT_DIR$/src/andersen/Georgiiev/Cache/CustomCache.java" />
         <option value="$PROJECT_DIR$/src/andersen/Georgiiev/Model/User.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/andersen/Georgiiev/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andersen/Georgiiev/Database/DBConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestApp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -126,6 +166,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -147,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -172,17 +218,43 @@
               <item name="CRUDApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CRUDApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUDApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Georgiiev" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CRUDApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="CRUDApp" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Georgiiev" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CRUDApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUDApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CRUDApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRUDApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -191,13 +263,19 @@
     <property name="SearchEverywhereHistoryKey" value="Arrays&#9;FILE&#9;jar:///usr/lib/jvm/java-10-jdk-amd64/jdk-10.0.1/lib/src.zip!/java.base/java/util/Arrays.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534840977203" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534842146867" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="andersen.Georgiiev" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/andersen/Georgiiev/Database" />
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/andersen/Georgiiev/Database" />
       <recent name="$PROJECT_DIR$/src/andersen/Georgiiev" />
     </key>
@@ -216,9 +294,10 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="andersen.Georgiiev.Main" />
       <module name="CRUDApp" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -262,11 +341,14 @@
       <workItem from="1533550832795" duration="2597000" />
       <workItem from="1533622050174" duration="17242000" />
       <workItem from="1533718727478" duration="2372000" />
+      <workItem from="1534841097947" duration="111000" />
+      <workItem from="1534841220603" duration="25000" />
+      <workItem from="1534841258527" duration="674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52713000" />
+    <option name="totallyTimeSpent" value="53851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -279,8 +361,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23623304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2490024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -293,12 +376,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952693" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960095" weight="0.32952693" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.20065252" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49960095" weight="0.1990212" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50438946" side_tool="true" visible="true" weight="0.24632953" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.24632953" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.49561054" visible="true" weight="0.24632953" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -415,13 +498,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Database/DBConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Database/DBConnectionPool.java" />
     <entry file="jar:///usr/lib/jvm/java-10-jdk-amd64/jdk-10.0.1/lib/src.zip!/java.base/java/util/LinkedHashSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -429,52 +506,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Model/Person.java" />
+    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Database/DatabaseHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Model/Developer.java" />
+    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Cache/CustomCache.java" />
+    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Model/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/andersen/Georgiiev/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testUsersTable#0;class#Main#0" />
+            <element signature="method#testDevelopersTable#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Model/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/andersen/Georgiiev/TestApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Database/DatabaseHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/andersen/Georgiiev/Database/DBConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Model/Developer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Cache/CustomCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/andersen/Georgiiev/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="136">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -518,7 +585,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
