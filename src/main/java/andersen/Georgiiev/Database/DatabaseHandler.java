@@ -12,7 +12,7 @@ import java.sql.*;
  */
 
 public class DatabaseHandler {
-    private static DBConnectionPool pool = null;
+    private static DBConnectionPool pool;
     private static final int CONNECTIONS_AMOUNT = 10;
 
     static {

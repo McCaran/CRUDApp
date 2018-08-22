@@ -1,11 +1,11 @@
 package andersen.Georgiiev.Model;
 
-/**
- * Класс, реализующий сущность разработчика
- */
 
 import andersen.Georgiiev.Database.DatabaseHandler;
 
+/**
+ * Класс, реализующий сущность разработчика
+ */
 
 public class Developer extends Person {
     private static int totalAmount;

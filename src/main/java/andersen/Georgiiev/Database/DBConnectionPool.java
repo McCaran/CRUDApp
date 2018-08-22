@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * Класс, реализующий паттерн пула соединений
  */
 
-public class DBConnectionPool {
+class DBConnectionPool {
     private int size;
     private String user = "user";
     private String password = "251251";
@@ -17,7 +17,7 @@ public class DBConnectionPool {
     private ArrayList<Connection> availableConnections;
     private ArrayList<Connection> connectionsInUse;
 
-    protected DBConnectionPool(int size) {
+    DBConnectionPool(int size) {
         this.size = size;
         availableConnections = new ArrayList<>(size);
         connectionsInUse = new ArrayList<>(size);
@@ -42,7 +42,7 @@ public class DBConnectionPool {
         }
     }
 
-    protected Connection get() {
+    Connection get() {
         if (availableConnections.isEmpty()) return null;
         Connection connection = availableConnections.get(0);
         availableConnections.remove(0);
@@ -50,7 +50,7 @@ public class DBConnectionPool {
         return connection;
     }
 
-    protected void put(Connection connection) {
+    void put(Connection connection) {
         if (!connectionsInUse.contains(connection))
             throw new IllegalArgumentException("передаваемое соединение не принадлежит пулу");
         availableConnections.add(connection);
